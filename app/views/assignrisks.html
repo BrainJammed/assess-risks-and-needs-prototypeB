@@ -119,35 +119,253 @@ Case summary
           
 
 
+
         <div class="govuk-grid-column-two-thirds">
           <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" role="main">
-            <a href="mentalhealth.html" class="govuk-back-link">Back</a>
-            <span class="govuk-caption-xl">Complete needs section</span>
-            <h1 class="govuk-heading-xl">Thinking and behaviour</h1>
+            <a href="mainOffence.html" class="govuk-back-link">Back</a>
+            <span class="govuk-caption-xl">Assign risks and make a proposal</span>
+            <h1 class="govuk-heading-xl">Assign risks</h1>
+
+            <div class="govuk-grid-row scores">
+              <div class="govuk-grid-column-full">
+            
+                <div class="govuk-grid-row scoresGrid">
+
+                  <div class="govuk-grid-column-one-quarter">
+                      <div class="govuk-data govuk-data--medium">
+                          <p class="govuk-data-value">
+                              Medium
+                          </p>
+                          <p class="govuk-data-label govuk-body govuk-!-font-size-14">
+                              Risk of Serious Recidivism (RSR)
+                          </p>
+                      </div>
+                  </div>
+
+<!--                   <div class="govuk-grid-column-one-quarter">
+                      <div class="govuk-data govuk-data--low">
+                          <p class="govuk-data-value">
+                              Low
+                          </p>
+                          <p class="govuk-data-label govuk-body govuk-!-font-size-14">
+                              OSP probability of...
+                          </p>
+                      </div>
+                  </div> -->
+
+                  <div class="govuk-grid-column-one-quarter">
+                      <div class="govuk-data govuk-data--medium">
+                          <p class="govuk-data-value">
+                              Medium
+                          </p>
+                          <p class="govuk-data-label govuk-body govuk-!-font-size-14">
+                              OGRS3 probability of proven reoffending
+                          </p>
+
+                      </div>
+                  </div>
+<!-- 
+                <div class="govuk-grid-column-one-quarter">
+                    <div class="govuk-data govuk-data--high">
+                        <p class="govuk-data-value">
+                            High
+                        </p>
+                        <p class="govuk-data-label govuk-!-font-size-14">
+                            OVP probability of provent violent-type reoffending
+                        </p>
+                    </div>
+                </div>
+
+                <div class="govuk-grid-column-one-quarter">
+                    <div class="govuk-data govuk-data--low">
+                        <p class="govuk-data-value">
+                            Low
+                        </p>
+                        <p class="govuk-data-label govuk-!-font-size-14">
+                            Risk of Serious Harm Analysis (ROSHA)
+                        </p>
+                    </div>
+                </div> -->
+
+               
+
+                </div>
+            </div>
+        </div>
 
 
 
+                <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
+                  <div class="govuk-form-group">
+                    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="label-as-page-heading">
+                        What are the individual's risk factors?
+                      </label>
+                    </h1>
+                  <div id="changed-name-hint" class="govuk-hint">
+                    Include static, stable dynamic and acute dynamic risk factors.
+                  </div>
+                    <textarea class="govuk-textarea govuk-js-character-count" id="label-as-page-heading" name="label-as-page-heading" rows="5" aria-describedby="label-as-page-heading-info"></textarea>
+                  </div>
 
-              
+                  <div id="label-as-page-heading-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                    You can enter up to 4000 characters
+                  </div>
+                </div>
 
-                    <div class="govuk-form-group ">
+                <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
+                  <div class="govuk-form-group">
+                    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="label-as-page-heading">
+                        What are the individual's protective factors?
+                      </label>
+                    </h1>
+                  <div id="changed-name-hint" class="govuk-hint">
+                    Consider the individual's strengths, resources and capacity and motivation to change.
+                  </div>
+                    <textarea class="govuk-textarea govuk-js-character-count" id="label-as-page-heading" name="label-as-page-heading" rows="5" aria-describedby="label-as-page-heading-info"></textarea>
+                  </div>
+
+                  <div id="label-as-page-heading-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                    You can enter up to 4000 characters
+                  </div>
+                </div>
+
+                <div class="govuk-form-group">
+                          <fieldset class="govuk-fieldset" aria-describedby="riskofseriousharm-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                              <h1 class="govuk-fieldset__heading">
+                                Do you assess risk of serious harm to be imminent?
+                              </h1>
+                            </legend>
+                              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+                               
+                                <div class="govuk-radios__item">
+                                  <input class="govuk-radios__input" id="riskofseriousharm" name="riskofseriousharm" type="radio" value="email" data-aria-controls="conditional-riskofseriousharm">
+                                  <label class="govuk-label govuk-radios__label " for="riskofseriousharm">
+                                    Yes
+                                  </label>
+                                </div>
+
+                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-riskofseriousharm">
+                                    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
+                                    <div class="govuk-form-group">
+                                      <label class="govuk-label" for="with-hint">
+                                        Give details
+                                      </label>
+                                      <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                                    </div>
+
+                                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                                      You can enter up to 4000 characters
+                                    </div>
+
+                                </div>
+                              </div>
+
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="responsibility" name="riskofseriousharm" type="radio" value="phone" data-aria-controls="conditional-responsibility">
+                            <label class="govuk-label govuk-radios__label" for="responsibility">
+                              No
+                            </label>
+                          </div>
+
+                        </div>
+                      </fieldset>
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                          <h1 class="govuk-fieldset__heading">
+                            Likelihood of further offending?
+                          </h1>
+                        </legend>
+                        <div class="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                              Very high
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                              High
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                              Medium
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                              Low
+                            </label>
+                          </div>
+                        </div>
+
+                      </fieldset>
+                    </div>
+
+                    <div class="govuk-form-group">
+                      <fieldset class="govuk-fieldset">
+                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                          <h1 class="govuk-fieldset__heading">
+                            Risk of serious harm
+                          </h1>
+                        </legend>
+                        <div class="govuk-radios">
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="seriousharm" name="seriousharm" type="radio" value="england">
+                            <label class="govuk-label govuk-radios__label" for="seriousharm">
+                              Very high
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="where-do-you-live-2" name="seriousharm" type="radio" value="">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                              High
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="seriousharm" name="seriousharm" type="radio" value="">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+                              Medium
+                            </label>
+                          </div>
+                          <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="seriousharm" name="seriousharm" type="radio" value="">
+                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+                              Low
+                            </label>
+                          </div>
+                        </div>
+
+                      </fieldset>
+                    </div>
+
+                          
+
+                     <div class="govuk-form-group ">
                         <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
                           <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                             <h1 class="govuk-fieldset__heading">
-                              Are thinking and behaviour a relevant factor?
+                              Does the Risk of Serious Harm Screening indicate a need for a full risk of Serious Harm Analysis?
                             </h1>
                           </legend>
 
                           <div class="govuk-radios govuk-radios--inline">
                             <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="" name="thinkingBehaviour" type="radio" value="yes">
-                              <label class="govuk-label govuk-radios__label" for="thinkingBehaviour">
+                              <input class="govuk-radios__input" id="" name="changed-name" type="radio" value="yes">
+                              <label class="govuk-label govuk-radios__label" for="changed-name">
                                 Yes
                               </label>
                             </div>
                             <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="" name="thinkingBehaviour" type="radio" value="no">
-                              <label class="govuk-label govuk-radios__label" for="thinkingBehaviour2">
+                              <input class="govuk-radios__input" id="" name="changed-name" type="radio" value="no">
+                              <label class="govuk-label govuk-radios__label" for="changed-name-2">
                                 No
                               </label>
                             </div>
@@ -156,332 +374,95 @@ Case summary
                         </fieldset>
                       </div>
 
-                      <div class="govuk-form-group impulsivity">
+                      
+
+                          
+                     
+                      <div class="govuk-form-group">
                         <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
                           <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                             <h1 class="govuk-fieldset__heading">
-                              Is impulsivity a problem for the individual?
+                              Response to previous supervision
                             </h1>
                           </legend>
 
 
                           <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                            <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="impulseNo" name="impulsivity" type="radio" value="email" data-aria-controls="conditional-impulseNo">
-                              <label class="govuk-label govuk-radios__label" for="impulseNo">
-                                No problems
-                              </label>
-                            </div>
-                           
-                            <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="impulseSome" name="impulsivity" type="radio" value="phone" data-aria-controls="conditional-impulseSome">
-                              <label class="govuk-label govuk-radios__label" for="impulseSome">
-                                Some problems
-                              </label>
-                            </div>
-                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-impulseSome">
-                              <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
-                                    <div class="govuk-form-group">
-                                      <label class="govuk-label" for="with-hint">
-                                        Give details
-                                      </label>
-                                      <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
-                                    </div>
-
-                                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-                                      You can enter up to 4000 characters
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-
-                            <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="impulseSign" name="impulsivity" type="radio" value="text" data-aria-controls="conditional-impulseSign">
-                              <label class="govuk-label govuk-radios__label" for="impulseSign">
-                                Significant problems
-                              </label>
-                            </div>
-                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-impulseSign">
-                              <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
-                                    <div class="govuk-form-group">
-                                      <label class="govuk-label" for="with-hint">
-                                        Give details
-                                      </label>
-                                      <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
-                                    </div>
-
-                                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-                                      You can enter up to 4000 characters
-                                    </div>
-
-                                </div>
-                          </div>
-
-                        </fieldset>
-                      </div>
-
-
-                       <div class="govuk-form-group temperIssues">
-                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-                          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                            <h1 class="govuk-fieldset__heading">
-                              Is temper control a problem for the individual?
-                            </h1>
-                          </legend>
-
-
-                          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                            <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="contact" name="temper" type="radio" value="email" data-aria-controls="conditional-contact">
-                              <label class="govuk-label govuk-radios__label" for="temper">
-                                No problems
-                              </label>
-                            </div>
-                           
-                            <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="temperSome" name="temper" type="radio" value="phone" data-aria-controls="conditional-temperSome">
-                              <label class="govuk-label govuk-radios__label" for="tempe-2">
-                                Some problems
-                              </label>
-                            </div>
-
-                            <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="temperSignificant" name="temper" type="radio" value="text" data-aria-controls="conditional-temperSignificant">
-                              <label class="govuk-label govuk-radios__label" for="temper-3">
-                                Significant problems
-                              </label>
-                            </div>
-                           
-                        </fieldset>
-                      </div>
-
-
-                      <div class="govuk-form-group temperIssues">
-                        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
-                          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                            <h1 class="govuk-fieldset__heading">
-                              Does the individual have pro-criminal attitudes?
-                            </h1>
-                          </legend>
-
-
-                          <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                            <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+                           <div class="govuk-radios__item">
+                              <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact">
                               <label class="govuk-label govuk-radios__label" for="contact">
-                                No problems
+                                Good
                               </label>
                             </div>
-                           
+                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+                              <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
+                                    <div class="govuk-form-group">
+                                      <label class="govuk-label" for="with-hint">
+                                        Give details
+                                      </label>
+                                      <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                                    </div>
+
+                                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                                      You can enter up to 4000 characters
+                                    </div>
+
+                                </div>
+
+                            </div>
                             <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="temperSome" name="contact" type="radio" value="phone" data-aria-controls="conditional-temperSome">
-                              <label class="govuk-label govuk-radios__label" for="temperSome">
-                                Some problems
+                              <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+                              <label class="govuk-label govuk-radios__label" for="contact-2">
+                                Sufficient
                               </label>
+                            </div>
+                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+                              <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
+                                    <div class="govuk-form-group">
+                                      <label class="govuk-label" for="with-hint">
+                                        Give details
+                                      </label>
+                                      <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                                    </div>
+
+                                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                                      You can enter up to 4000 characters
+                                    </div>
+
+                                </div>
+
                             </div>
 
+
                             <div class="govuk-radios__item">
-                              <input class="govuk-radios__input" id="temperSignificant" name="contact" type="radio" value="text" data-aria-controls="conditional-temperSignificant">
+                              <input class="govuk-radios__input" id="contact-3" name="contact" type="radio" value="text" data-aria-controls="conditional-contact-3">
                               <label class="govuk-label govuk-radios__label" for="contact-3">
-                                Significant problems
+                                Low
                               </label>
                             </div>
-                           
+                            <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-3">
+                              <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
+                                    <div class="govuk-form-group">
+                                      <label class="govuk-label" for="with-hint">
+                                        Give details
+                                      </label>
+                                      <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                                    </div>
+
+                                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+                                      You can enter up to 4000 characters
+                                    </div>
+
+                                </div>
+                          </div>
+
                         </fieldset>
                       </div>
+                          
 
-
-
-
-
-            
-
-                    <div class="govuk-form-group">
-                          <fieldset class="govuk-fieldset" aria-describedby="copeincustody-hint">
-                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                              <h1 class="govuk-fieldset__heading">
-                                Is there evidence that the individual demonstrates inadequate social or interpersonal skills?
-                              </h1>
-                            </legend>
-                              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                               
-                                <div class="govuk-radios__item">
-                                  <input class="govuk-radios__input" id="copeincustody" name="copeincustody" type="radio" value="email" data-aria-controls="conditional-copeincustody">
-                                  <label class="govuk-label govuk-radios__label " for="copeincustody">
-                                    Yes
-                                  </label>
-                                </div>
-
-                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-copeincustody">
-                                    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
-                                    <div class="govuk-form-group">
-                                      <label class="govuk-label" for="with-hint">
-                                        Give details
-                                      </label>
-                                      <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
-                                    </div>
-
-                                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-                                      You can enter up to 4000 characters
-                                    </div>
-
-                                </div>
-                              </div>
-
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="responsibility" name="copeincustody" type="radio" value="phone" data-aria-controls="conditional-responsibility">
-                            <label class="govuk-label govuk-radios__label" for="responsibility">
-                              No
-                            </label>
-                          </div>
-
-                        </div>
-                      </fieldset>
-                    </div>
-
-                    <div class="govuk-form-group">
-                          <fieldset class="govuk-fieldset" aria-describedby="solvstrategies">
-                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                              <h1 class="govuk-fieldset__heading">
-                                Is there evidence that the individual uses inappropriate problem solving strategies?
-                              </h1>
-                            </legend>
-                              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                               
-                                <div class="govuk-radios__item">
-                                  <input class="govuk-radios__input" id="solvstrategies" name="solvstrategies" type="radio" value="email" data-aria-controls="conditional-solvstrategies">
-                                  <label class="govuk-label govuk-radios__label " for="solvstrategies">
-                                    Yes
-                                  </label>
-                                </div>
-
-                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-solvstrategies">
-                                    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
-                                    <div class="govuk-form-group">
-                                      <label class="govuk-label" for="with-hint">
-                                        Give details
-                                      </label>
-                                      <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
-                                    </div>
-
-                                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-                                      You can enter up to 4000 characters
-                                    </div>
-
-                                </div>
-                              </div>
-
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="responsibility" name="solvstrategies" type="radio" value="phone" data-aria-controls="conditional-responsibility">
-                            <label class="govuk-label govuk-radios__label" for="responsibility">
-                              No
-                            </label>
-                          </div>
-
-                        </div>
-                      </fieldset>
-                    </div>
-
-                    <div class="govuk-form-group">
-                          <fieldset class="govuk-fieldset" aria-describedby="specialistReport-hint">
-                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                              <h1 class="govuk-fieldset__heading">
-                                Is there evidence that the individual has difficulty understanding other people's points of views?
-                              </h1>
-                            </legend>
-                              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                               
-                                <div class="govuk-radios__item">
-                                  <input class="govuk-radios__input" id="specialistReport" name="specialistReport" type="radio" value="email" data-aria-controls="conditional-specialistReport">
-                                  <label class="govuk-label govuk-radios__label " for="specialistReport">
-                                    Yes
-                                  </label>
-                                </div>
-
-                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-specialistReport">
-                                    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
-                                    <div class="govuk-form-group">
-                                      <label class="govuk-label" for="with-hint">
-                                        Give details
-                                      </label>
-                                      <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
-                                    </div>
-
-                                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-                                      You can enter up to 4000 characters
-                                    </div>
-
-                                </div>
-                              </div>
-
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="responsibility" name="specialistReport" type="radio" value="phone" data-aria-controls="conditional-responsibility">
-                            <label class="govuk-label govuk-radios__label" for="responsibility">
-                              No
-                            </label>
-                          </div>
-
-                        </div>
-                      </fieldset>
-                    </div>
-
-                    <div class="govuk-form-group">
-                          <fieldset class="govuk-fieldset" aria-describedby="difficultyUnderstanding-hint">
-                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                              <h1 class="govuk-fieldset__heading">
-                                Are anti-social or discriminatory attitudes or behaviour associated with offending?
-                              </h1>
-                            </legend>
-                              <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
-                               
-                                <div class="govuk-radios__item">
-                                  <input class="govuk-radios__input" id="difficultyUnderstanding" name="difficultyUnderstanding" type="radio" value="email" data-aria-controls="conditional-difficultyUnderstanding">
-                                  <label class="govuk-label govuk-radios__label " for="difficultyUnderstanding">
-                                    Yes
-                                  </label>
-                                </div>
-
-                                <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-difficultyUnderstanding">
-                                    <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
-                                    <div class="govuk-form-group">
-                                      <label class="govuk-label" for="with-hint">
-                                        Give details
-                                      </label>
-                                      <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
-                                    </div>
-
-                                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
-                                      You can enter up to 4000 characters
-                                    </div>
-
-                                </div>
-                              </div>
-
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="responsibility" name="difficultyUnderstanding" type="radio" value="phone" data-aria-controls="conditional-responsibility">
-                            <label class="govuk-label govuk-radios__label" for="responsibility">
-                              No
-                            </label>
-                          </div>
-
-                          <div class="govuk-radios__item">
-                            <input class="govuk-radios__input" id="responsibility" name="difficultyUnderstanding" type="radio" value="phone" data-aria-controls="conditional-responsibility">
-                            <label class="govuk-label govuk-radios__label" for="responsibility">
-                              In part
-                            </label>
-                          </div>
-
-                        </div>
-                      </fieldset>
-                    </div>
-
-
-
-
-
-            <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button" onclick="location.href = 'otherneeds.html';">Continue to other needs</button>
+            <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button" onclick="location.href = 'proposal.html';">
+              Continue to make a proposal
+            </button>
 
             <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="location.href = 'homepage3.html';">
               Back to homepage
@@ -497,35 +478,13 @@ Case summary
       </div>
 
 
-          
-            
-
-
-          
-             
+        
        </div>
     </div>
-
-      
-
- 
-  
-
-
-
-
-
-
   </div>
 
-
-
-
 </div>
 </div>
-
-
-
         </main>
       </div>
     

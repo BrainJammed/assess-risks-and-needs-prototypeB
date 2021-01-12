@@ -20,7 +20,6 @@ $( document ).ready(function() {
 	$("#statutoryNo").click(function(){
     	$(".hiddenSectionOffences").hide();
     	$(".hiddenDate").show();
-
 	});
 
 	$("#motivationYes").click(function(){
