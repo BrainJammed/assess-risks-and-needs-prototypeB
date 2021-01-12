@@ -19,8 +19,12 @@ Case summary
       <link rel="apple-touch-icon" sizes="152x152" href="/govuk/assets/images/govuk-apple-touch-icon-152x152.png">
       <link rel="apple-touch-icon" href="/govuk/assets/images/govuk-apple-touch-icon.png">
     
-<link href="/public/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" />
 
+    
+  <!--[if lte IE 8]><link href="/public/stylesheets/application-ie8.css" rel="stylesheet" type="text/css" /><![endif]-->
+<!--[if gt IE 8]><!-->
+<link href="/public/stylesheets/application.css" media="all" rel="stylesheet" type="text/css" />
+<!--<![endif]-->
 
 
 
@@ -57,7 +61,13 @@ Case summary
             <a class="moj-header__navigation-link" href="#" aria-current="page">Mark Berridge</a>
           </li>
 
+<!--           <li class="moj-header__navigation-item">
+            <a class="moj-header__navigation-link" href="/change-court">Change court</a>
+          </li>
 
+          <li class="moj-header__navigation-item">
+            <a class="moj-header__navigation-link" href="#">Sign out</a>
+          </li> -->
         </ul>
 
       </nav>
@@ -79,7 +89,13 @@ Case summary
       <nav class="moj-primary-navigation" aria-label="Primary navigation">
 
         <ul class="moj-primary-navigation__list">
+          <!-- <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link"  href="/dashboard">Dashboard</a>
+          </li> -->
 
+<!--           <li class="moj-primary-navigation__item">
+            <a class="moj-primary-navigation__link" href="/cases/day/2020-06-17/case-list">Cases</a>
+          </li> -->
         </ul>
       </nav>
     </div>
@@ -104,213 +120,231 @@ Case summary
         <span class="govuk-body key-details-bar_divider crn"><strong>CRN:</strong> DX12340X</span>
         <span class="govuk-body key-details-bar_divider pnc"><strong>PNC:</strong> A1234560FF</span>
         <span class="govuk-body key-details-bar_divider pnc"><strong>Date of birth:</strong> 12 October 1989 (31 years old)</span>
+        <!-- <span class="key-details-bar__nino"></span>
+        <span class="govuk-visually-hidden">Status from nDelius:</span>
+        <span class="key-details-bar__status">Current offender</span> -->
+        <!-- <span class="govuk-visually-hidden">Status from nDelius:</span>
+        <span class="key-details-bar__status govuk-!-margin-right-2">Medium Risk of Serious Harm</span> -->
       </div>
 
 
     </div></section>
 
  <div class="govuk-width-container ">
-   <!-- <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main"> -->
+   <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" id="main-content" role="main">
 
 
       <div class="govuk-grid-row">
         <div class="govuk-grid-column-full">
-
-         
-
-
-
-        <div class="govuk-grid-column-two-thirds">
-          <main class="govuk-main-wrapper govuk-main-wrapper--auto-spacing" role="main">
-            <a href="mainOffence.html" class="govuk-back-link">Back</a>
-            <span class="govuk-caption-xl">Offences</span>
-
-            <h1 class="govuk-heading-xl">Previous convictions</h1>
-
-             <h2 class="govuk-heading-l ">Sanctions</h2>
-                <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-1">Date of first sanction</p>
-                <p class="govuk-body govuk-!-font-weight-regular">19 July 2017</p>
-
-                <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-1">Number of previous sanctions for all recordable offences</p>
-                <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-bottom-6">2</p>
-
-                <p class="govuk-body govuk-!-font-weight-bold govuk-!-margin-bottom-1">Number of previous or current sanctions for violent offences</p>
-                <p class="govuk-body govuk-!-font-weight-regular govuk-!-margin-bottom-6">3</p>
-
-
-<!-- 
-                    <div class="govuk-form-group previousConvss">
-                      <fieldset class="govuk-fieldset">
-                        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                          <h1 class="govuk-fieldset__heading">
-                            Does the individual have any previous convictions?
-                          </h1>
-                        </legend>
-                        <div class="govuk-radios">
-                          <div class="govuk-radios__item previousConvictionsYes">
-                            <input class="govuk-radios__input" id="prevousConvictionsYes" name="where-do-you-live" type="radio" value="yes">
-                            <label class="govuk-label govuk-radios__label" for="where-do-you-live">
-                              Yes
-                            </label>
-                          </div>
-                          <div class="govuk-radios__item previousConvictionsNo">
-                            <input class="govuk-radios__input" id="prevousConvictionsNo" name="where-do-you-live" type="radio" value="no">
-                            <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
-                              No
-                            </label>
-                          </div>
-                        </div>
-
-                      </fieldset>
-                    </div> -->
-
-            <div class="govuk-form-group previousConvictionsDiv">
-              <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-                <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                  <h1 class="govuk-fieldset__heading">
-                    Does the individual have any previous convictions for the following?
-                  </h1>
-                </legend>
-                  <div id="waste-hint" class="govuk-hint">
-                    Select all that apply.
-                  </div>
-                      <div class="govuk-checkboxes">
-                        <div class="govuk-checkboxes__item">
-                          <input class="govuk-checkboxes__input previousConvictionsCheckboxes" id="" name="waste" type="checkbox" value="">
-                          <label class="govuk-label govuk-checkboxes__label" for="waste">
-                            Murder or attempted murder
-                          </label>
-                        </div>
-                        <div class="govuk-checkboxes__item">
-                          <input class="govuk-checkboxes__input previousConvictionsCheckboxes" id="" name="waste" type="checkbox" value="">
-                          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                            Threat or conspirancy to murder or manslaughter
-                          </label>
-                        </div>
-                        <div class="govuk-checkboxes__item ">
-                          <input class="govuk-checkboxes__input previousConvictionsCheckboxes" id="" name="waste" type="checkbox" value="farm">
-                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                            Wounding or GBH (Sections 18/20 Offences Against the Person ACT 1861)
-                          </label>
-                        </div>
-                        <div class="govuk-checkboxes__item">
-                          <input class="govuk-checkboxes__input previousConvictionsCheckboxes" id="" name="waste" type="checkbox" value="farm">
-                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                            Aggravated burglary
-                          </label>
-                        </div>
-                        <div class="govuk-checkboxes__item">
-                          <input class="govuk-checkboxes__input previousConvictionsCheckboxes" id="" name="waste" type="checkbox" value="farm">
-                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                            Arson
-                          </label>
-                        </div>
-                        <div class="govuk-checkboxes__item">
-                          <input class="govuk-checkboxes__input previousConvictionsCheckboxes" id="" name="waste" type="checkbox" value="farm">
-                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                            Criminal damage with intent to endager life
-                          </label>
-                        </div>
-                        <div class="govuk-checkboxes__item">
-                          <input class="govuk-checkboxes__input previousConvictionsCheckboxes" id="" name="waste" type="checkbox" value="farm">
-                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                            Kidnapping or false imprisonment
-                          </label>
-                        </div>
-                        <div class="govuk-checkboxes__item">
-                          <input class="govuk-checkboxes__input previousConvictionsCheckboxes" id="" name="waste" type="checkbox" value="farm">
-                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                            Possession of a firearm with intent to endager life or resist arrest
-                          </label>
-                        </div>
-                        <div class="govuk-checkboxes__item">
-                          <input class="govuk-checkboxes__input previousConvictionsCheckboxes" id="" name="waste" type="checkbox" value="farm">
-                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                            Robbery
-                          </label>
-                        </div>
-                        <div class="govuk-checkboxes__item">
-                          <input class="govuk-checkboxes__input previousConvictionsCheckboxes" id="" name="waste" type="checkbox" value="farm">
-                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
-                            Any other offence involve carrying or use of a weapon
-                          </label>
-                        </div>
-              </div>
-              </fieldset>
-              </div>
-
-              <div class="govuk-form-group carryingWeapon">
-                <fieldset class="govuk-fieldset">
-                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-                    <h1 class="govuk-fieldset__heading">
-                      Did the offence involve carrying or use of a weapon?
-                    </h1>
-                  </legend>
-                  <div class="govuk-radios involveCarryingweaponYes">
-                    <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="involveCarryingweaponYes" name="carryingWeapon" type="radio" value="yes">
-                      <label class="govuk-label govuk-radios__label" for="carryingWeaponYes">
-                        Yes
-                      </label>
-                    </div>
-                    <div class="govuk-radios__item involveCarryingweaponNO">
-                      <input class="govuk-radios__input" id="involveCarryingweaponNo" name="carryingWeapon" type="radio" value="no">
-                      <label class="govuk-label govuk-radios__label" for="carryingWeaponNo">
-                        No
-                      </label>
-                    </div>
-                  </div>
-
-                </fieldset>
-              </div>
-
-
-              
-
-            <button class="prcobutton govuk-button govuk-!-margin-right-1" data-module="govuk-button" onclick="location.href = 'homepage3.html';">
-              Complete Review convictions and offences sections
-            </button>
-
-            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="location.href = 'homepage3.html';">
-              Back to homepage
-            </button>
-
-
-          </main>
-            
-        </div>
-
-           
+           <h1 class="govuk-heading-xl">Complete a short PSR assessment</h1>
         </div>
       </div>
 
 
-          
             
+              <div class="govuk-grid-row">
+               <div class="govuk-grid-column-full">
+                
 
 
           
-             
-       </div>
+
+
+
+
+      <h2 class="govuk-heading-s govuk-!-margin-bottom-2">Application incomplete</h2>
+      <p class="govuk-body govuk-!-margin-bottom-7">You have completed 2 of 15 sections.</p>
+
+      <ol class="app-task-list">
+       
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">1. </span> Review convictions and offences
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="mainOffence.html" aria-describedby="eligibility-status">
+                  Main offence
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="previousConvictions.html" aria-describedby="read-declaration-status">
+                  Previous convictions
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">2. </span> Complete needs sections
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="accommodation.html" aria-describedby="company-information-status">
+                  Accommodation
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="trainingandemployability.html" aria-describedby="contact-details-status">
+                  Education, training and employability
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="finance.html" aria-describedby="list-convictions-status">
+                  Finance
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="relationships.html" aria-describedby="relationships">
+                  Relationships
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+
+            <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="alcohol.html" aria-describedby="alcohol-misuse">
+                    Alcohol misuse
+                  </a>
+                </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+
+            <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="substance.html" aria-describedby="alcohol-misuse">
+                    Substance misuse
+                  </a>
+                </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+
+            <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="mental.html" aria-describedby="alcohol-misuse">
+                    Physical and mental health
+                  </a>
+                </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+
+            <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="thinking.html" aria-describedby="alcohol-misuse">
+                    Thinking and behaviour
+                  </a>
+                </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+
+            <li class="app-task-list__item">
+                <span class="app-task-list__task-name">
+                  <a href="#" aria-describedby="other-needs">
+                    Other needs
+                  </a>
+                </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+
+          </ul>
+        </li>
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">3. </span> Assign risks and make a proposal
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="assignrisks.html" aria-describedby="eligibility-status">
+                  Assign risks
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="proposal.html" aria-describedby="read-declaration-status">
+                  Make a proposal
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">4. </span> Insert your name and identify sources
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="psrDetails.html" aria-describedby="other-needs">
+                  Probation officer name and sources of information
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag app-task-list__tag ">completed</strong>
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">5. </span> Check your answers and submit PSR
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <span class="app-task-list__task-name">
+                <a href="checkanswers.html" aria-describedby="other-needs">
+                  Check your answers
+                </a>
+              </span>
+              <strong class="govuk-tag govuk-tag--grey app-task-list__tag" id="alcohol-convictions-status">Not started</strong>
+            </li>
+          </ul>
+        </li>
+
+      </ol>
     </div>
-
-      
-
- 
-  
+  </div>
 
 
+        </main>
+      </div>
 
 
 
 
+
+
+
+    </div>
   </div>
 
 
 
-
-</div>
-</div>
 
 
 
