@@ -97,6 +97,8 @@ $govuk-assets-path: '/govuk/assets/';
 	padding: 20px;
 }
 
+
+
 //USER BANNER
 
 .app-phase-tag {
@@ -148,6 +150,10 @@ $govuk-assets-path: '/govuk/assets/';
 //OFFENCES QUESTIONS
 
 .hiddenSectionOffences {
+	display: none;
+}
+
+.hiddenDate {
 	display: none;
 }
 

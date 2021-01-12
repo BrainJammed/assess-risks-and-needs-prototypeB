@@ -14,9 +14,13 @@ $( document ).ready(function() {
     
     $("#statutoryYes").click(function(){
     	$(".hiddenSectionOffences").show();
+    	$(".hiddenDate").hide();
 	});
+
 	$("#statutoryNo").click(function(){
     	$(".hiddenSectionOffences").hide();
+    	$(".hiddenDate").show();
+
 	});
 
 	$("#motivationYes").click(function(){

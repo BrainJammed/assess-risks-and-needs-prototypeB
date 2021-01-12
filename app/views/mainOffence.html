@@ -136,7 +136,7 @@ Case summary
 
              <p class="govuk-body govuk-!-font-weight-regular">Squirty cheese cheese slices stinking bishop. Smelly cheese red leicester stinking bishop cow cauliflower cheese when the cheese comes out everybody's happy when the cheese comes out everybody's happy smelly cheese. Stilton cheesecake st. agur blue cheese croque monsieur bocconcini dolcelatte cheese and wine cheese triangles. Cheesecake dolcelatte paneer.</p>
 
-            <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
+           <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="4000">
               <div class="govuk-form-group">
                 <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="label-as-page-heading">
                     Why did the offence occur?
@@ -210,7 +210,7 @@ Case summary
                <fieldset class="govuk-fieldset" aria-describedby="impact-hint">
                   <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
                     <h1 class="govuk-fieldset__heading">
-                      Does the individual recognise the impact and consequences of offence(s) on the victim or community  or wider society?
+                      Does the individual recognise the impact and consequence of offence(s) on the victim, community/wider society?
                     </h1>
                   </legend>
                   <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
@@ -384,6 +384,43 @@ Case summary
                 </fieldset>
               </div>
 
+              <div class="govuk-form-group hiddenDate">
+                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                    <h1 class="govuk-fieldset__heading">
+                      Date of commencement of community sentence or earliest possible release from custody
+                    </h1>
+                  </legend>
+                  <div id="passport-issued-hint" class="govuk-hint">
+                    For example, 12 11 2007
+                  </div>
+                  <div class="govuk-date-input" id="passport-issued">
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                          Day
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                          Month
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                          Year
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                    </div>
+                  </div>
+
+                </fieldset>
+              </div>
+
 
               <div  class="hiddenSectionOffences">
 
@@ -453,7 +490,7 @@ Case summary
 
               <div class="govuk-form-group">
                 <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
-                    Number of previous/current sanctions involving contact adult sexual offences
+                    Number of previous/current sanctions involving contact adult sexual/sexually motivated offences
                   </label>
                 </h1>
                 <input class="govuk-input govuk-input--width-3" id="width-3" name="width-3" type="text">
@@ -461,7 +498,7 @@ Case summary
 
               <div class="govuk-form-group">
                 <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
-                    Number of previous/current sanctions involving contact child sexual offences
+                    Number of previous/current sanctions involving contact child sexual/sexually motivated offences
                   </label>
                 </h1>
                 <input class="govuk-input govuk-input--width-3" id="width-3" name="width-3" type="text">
@@ -469,7 +506,7 @@ Case summary
 
               <div class="govuk-form-group">
                 <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="event-name">
-                    Number of previous/current sanctions involving indecent image sexual offences
+                    Number of previous/current sanctions involving indecent child image sexual/sexually motivated offences
                   </label>
                 </h1>
                 <input class="govuk-input govuk-input--width-3" id="width-3" name="width-3" type="text">
@@ -482,16 +519,54 @@ Case summary
                 </h1>
                 <input class="govuk-input govuk-input--width-3" id="width-3" name="width-3" type="text">
               </div>
+
+              <div class="govuk-form-group ">
+                <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                    <h1 class="govuk-fieldset__heading">
+                      Date of commencement of community sentence or earliest possible release from custody
+                    </h1>
+                  </legend>
+                  <div id="passport-issued-hint" class="govuk-hint">
+                    For example, 12 11 2007
+                  </div>
+                  <div class="govuk-date-input" id="passport-issued">
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                          Day
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                          Month
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                    </div>
+                    <div class="govuk-date-input__item">
+                      <div class="govuk-form-group">
+                        <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                          Year
+                        </label>
+                        <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                    </div>
+                  </div>
+
+                </fieldset>
+              </div>
               </div>
 
 
 
 
-            
+            <button class="govuk-button govuk-!-margin-right-1" data-module="govuk-button" onclick="location.href = 'previousConvictions.html';">Continue to  previous convictions</button>
 
-            <button class="govuk-button" data-module="govuk-button" onclick="location.href = 'previousConvictions.html';">
-              Continue to  previous convictions
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="location.href = 'homepage3.html';">
+              Back to homepage
             </button>
+
 
 
           </main>
