@@ -10,9 +10,22 @@ $(document).ready(function () {
 })
 
 
+
+
 $( document ).ready(function() {
+
+$(".mainButton").click(function(){
+        if(document.getElementById('acceptYes').checked || document.getElementById('responsibility').checked)  {
+            
+          }else  {
+            window.location.href='mainOffenceError.html';
+          }
+    }); 
+
+
+
     
-    $("#statutoryYes").click(function(){
+  $("#statutoryYes").click(function(){
     	$(".hiddenSectionOffences").show();
     	$(".hiddenDate").hide();
 	});
